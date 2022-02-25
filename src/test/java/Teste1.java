@@ -77,7 +77,7 @@ public class Teste1 {
 				        case 'Y': robot.keyPress(KeyEvent.VK_SHIFT); robot.keyPress(KeyEvent.VK_Y); robot.keyRelease(KeyEvent.VK_SHIFT); break;
 				        case 'Z': robot.keyPress(KeyEvent.VK_SHIFT); robot.keyPress(KeyEvent.VK_Z); robot.keyRelease(KeyEvent.VK_SHIFT); break;	        
 				        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-				        case '´': robot.keyPress(KeyEvent.VK_DEAD_ACUTE); break;
+				        case 'ï¿½': robot.keyPress(KeyEvent.VK_DEAD_ACUTE); break;
 				        case '`': robot.keyPress(KeyEvent.VK_SHIFT); robot.keyPress(KeyEvent.VK_DEAD_ACUTE); robot.keyRelease(KeyEvent.VK_SHIFT); break;
 				        case '0': robot.keyPress(KeyEvent.VK_0); break;
 				        case '1': robot.keyPress(KeyEvent.VK_1); break;
@@ -123,33 +123,35 @@ public class Teste1 {
 				        case '?': robot.keyPress(KeyEvent.VK_SLASH); break;			        
 				        case ' ': robot.keyPress(KeyEvent.VK_SPACE); break;
 			        default:
-			            throw new IllegalArgumentException("O caractere " + acao + " não foi encontrado na listagem.");
+			            throw new IllegalArgumentException("O caractere " + acao + " nï¿½o foi encontrado na listagem.");
 			        }// if  / else
 		        } // 
 			} // for
 	} // */
 	
-	@Test
+	/*@Test
 	@DisplayName("Teste de Teste 01")
 	public void mtm() throws Exception {
 		System.out.println("Teste de Teste 01");
 		
 		informarTextoDireto("tcDown");
 		informarTextoDireto("tcDown");
-		informarTextoDireto("Goiania=_~-+&%** []{}\" ´a ` ^a ");
+		informarTextoDireto("Goiania=_~-+&%** []{}\" ï¿½a ` ^a ");
 		informarTextoDireto("tcEnter");
-	}
+	}// */
 	
-	//@Test
+	@Test
 	@DisplayName("Teste de Teste 02")
 	public void mtm2() {
 		System.out.println("Teste de Teste 02");
+		System.out.println(">>>>>>>>>>>>>>>>>");
 	}
 	
-	//@Test
+	@Test
 	@DisplayName("Teste de Teste 03")
 	public void mtm3() {
 		System.out.println("Teste de Teste 03");
+		System.out.println(">>>>>>>>>>>>>>>>>");
 	}
 	
 }
